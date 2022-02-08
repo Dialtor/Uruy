@@ -1,0 +1,120 @@
+@font-face{
+    font-family:gotham;
+        src: url(fonts/GothamBlack.woff)
+             format("woff");
+    font-weight:black;
+    font-style:normal;   
+}
+@font-face{
+    font-family:gotham;
+        src: url(fonts/GothamBold.woff)
+             format("woff");
+    font-weight:bold;
+    font-style:normal;
+}
+
+
+:root {
+    --main-color: #0031b0;
+    --header-color: #2359e3;
+    --text-title: #0035BB;
+    --text: #2D68FF;
+    --bg-color: #5291d7;
+    --bg-second-color: #f8f8f8;
+    --form-bg-color: #002589;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    background-color: var(--main-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header-contain {
+    width: 100%;
+    height: 80px;
+    background-color: var(--header-color);
+    display: flex;
+    place-content: center ;
+    box-shadow: 0px 5px 50px 1px rgba(0, 0, 0, 0.25);
+}
+
+.header-contain img {
+    width: 80px;
+}
+
+.grid-container {
+    max-width: 98%;
+    margin: 0 auto;
+    
+}
+
+.hero-main-container {
+    width: 98%;
+    height: 300px;
+    /* background-color: var(--bg-color); */
+    background-image: url('../img/des360.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 34px auto;
+    border-radius: 33px;
+    box-shadow: 0px 5px 50px 1px rgba(0, 0, 0, 0.25);
+}
+
+
+.about-container {
+    display: grid;
+    height: 280px;
+    grid-template-columns: 7fr 8fr;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.about-info-container {
+    background-color:  var(--bg-second-color);
+    border-radius: 33px;
+    box-shadow: 0px 5px 50px 1px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+}
+
+.about-info-container h2 {
+    color: var(--text-title);
+    font-size: 2.4rem;
+    
+}
+
+.about-info-container p {
+    color: var(--text);
+    font-size: 1.4rem;
+}
+
+.about-slider {
+    background-color: var(--bg-second-color);
+    border-radius: 33px;
+    box-shadow: 0px 5px 50px 1px rgba(0, 0, 0, 0.25);
+}
+
+.about-slider h2 {
+    color: var(--text);
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.contact-container {
+    background-color: #5291d7;
+    display: grid;
+    height: 280px;
+    grid-template-columns: 7fr 8fr;
+    grid-template-rows: 3fr;
+    gap: 20px;
+}
+
+.form-contact-container {
+    background-color: var(--form-bg-color);
+}
+
+
+
