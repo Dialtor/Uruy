@@ -160,6 +160,12 @@ body {
     border: none;
     border-radius: 33px;
     justify-content: center;
+    color: var(--bg-second-color);
+    font-size: 1.2rem;
+}
+
+.form-contact-container input:focus {
+    color: var(--bg-second-color);
 }
 
 .form-contact-container label {
@@ -181,6 +187,27 @@ body {
 }
 .form-contact-container div:nth-child(5) {
     grid-column: 1/3;
+}
+
+.button-contact-container {
+    grid-row: 3;
+    justify-self: center;
+}
+
+.button-contact-container button {
+    width: 580px;
+    height: 60px;
+    font-size: 1.2rem;
+    color: var(--bg-second-color);
+    background: var(--bg-color);
+    border: none;
+    border-radius: 33px;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+}
+
+.button-contact-container button:hover {
+    box-shadow: 0px 5px 50px 1px rgba(0, 0, 0, 0.25);
 }
 
 
