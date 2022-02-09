@@ -234,7 +234,7 @@ body {
 }
 
 .button-contact-container button {
-    width: 100%;
+    width: 90%;
     height: 70px;
     font-size: 1.2rem;
     color: var(--bg-second-color);
