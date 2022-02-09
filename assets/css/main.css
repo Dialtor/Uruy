@@ -46,7 +46,7 @@ body {
 }
 
 .grid-container {
-    max-width: 98%;
+    max-width: 90%;
     margin: 0 auto;
     
 }
@@ -111,14 +111,15 @@ body {
 }
 
 .img-contact-container {
-    grid-column: 2/3;
+    grid-row: 2;
+    grid-column: 2;
     margin: 0 auto;
     align-items: center;
     opacity: 0.7;
 }
 
 .img-contact-container img {
-    width: 500px;
+    align-self: center;
 }
 
 
@@ -127,6 +128,7 @@ body {
     color: var(--bg-second-color);
     border-radius: 33px;
     height: 70px;
+    padding: 0 20px;
     display: flex;
     justify-content: center;
 }
@@ -135,7 +137,6 @@ body {
     font-size: 2.8rem;
     position: relative;
     bottom: 26px;
-    
 }
 
 .form-contact-container {
@@ -146,7 +147,7 @@ body {
     margin-top: 20px;
     height: 380px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 7fr 8fr;
     grid-template-rows: repeat(4, 1fr);
     padding: 20px;
     gap: 20px;
@@ -191,11 +192,12 @@ body {
 
 .button-contact-container {
     grid-row: 3;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
 }
 
 .button-contact-container button {
-    width: 580px;
+    width: 100%;
     height: 60px;
     font-size: 1.2rem;
     color: var(--bg-second-color);
@@ -208,6 +210,65 @@ body {
 
 .button-contact-container button:hover {
     box-shadow: 0px 5px 50px 1px rgba(0, 0, 0, 0.25);
+}
+
+.social-contact-container {
+    height: 60px;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: var(--bg-second-color);
+}
+
+.social-contact-container a span {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: flex;
+    width: 50px;
+    height: 46px;
+    -webkit-transition: 0.2s;
+}
+
+.social-contact-container a span:hover {
+    width: 56px;
+}
+
+
+.social-contact-container a {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 62px;
+    border-radius: 12px;
+    background-color: var(--bg-second-color);
+    -webkit-transition: 0.2s;
+}
+
+.social-contact-container a:hover{
+    border-radius: 18px;
+}
+
+
+
+.discord-contact {
+    background-image: url('../img/discord-brands.svg');
+   
+}
+.youtube-contact {
+    background-image: url('../img/youtube-brands.svg');
+}
+
+.twitter-contact {
+    background-image: url('../img/twitter-brands.svg');
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: var(--header-color);
 }
 
 
