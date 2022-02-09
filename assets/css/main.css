@@ -57,7 +57,7 @@ body {
     /* background-color: var(--bg-color); */
     background-image: url('../img/des360.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 2%;
     background-size: cover;
     margin: 34px auto;
     border-radius: 33px;
